@@ -43,14 +43,27 @@ a=prompt("Wrong...Guess again!")
         }
         if(a==x){
     alert("Congratulations, you have guessed the no. correctly!")
-    document.write("<br>")
-    document.write("Correct no. guessed")
 }
 }
+
+
 let j =arr.length
 document.write("<br>")
 document.write("<br>")
-document.write("Your score is : ",100-j)
+// document.write("Your score is : ",100-j)
+let zz=("Your score is : ",100-j)
+window.onload = function() {
+       //when the document is finished loading, replace everything
+       //between the <a ...> </a> tags with the value of splitText
+   document.getElementById("myLink").innerHTML=zz;
+} 
+
         </script>
+        <br><br><br><br>
+        <center style="font-size: x-large;">Your score is:</center>
+        <br>
+        <center style="font-size: xxx-large;">
+<a id="myLink" href = index.html></a>
+</center>
 </body>
 </html>
