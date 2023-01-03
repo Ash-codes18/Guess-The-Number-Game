@@ -1,69 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
-        body{
-            background-color: rgb(2, 2, 23);
-            color: aliceblue;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
-        }
-    </style>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Guess The Number</title>
 </head>
+
 <body>
-    <b><h1><u>LOG</u></h1></b>
-    <script>
-       arr=[]
-alert("Welcome to The Number guessing game!")
-let x = Math.floor((Math.random() * 100) + 1);
-alert("A random no. is being generated between 1-100.......")
-let a =prompt("Guess the No.")
-while(a!=x){
-a=prompt("Wrong...Guess again!")
-    if(a>x){
-        alert("The guessed no. is greater than the random no.")
-        document.write("The guessed no. is greater than the random no.")
-        document.write("<br>")
-        let g="The guessed no. is greater than the random no."
-        console.log(g)
-        arr.push(g)
-    }
-    if(a<x){
-        alert("The guessed no. is less than the random no.")
-        document.write("The guessed no. is less than the random no.")
-        document.write("<br>")
-        let h="The guessed no. is less than the random no."
-        console.log(h)
-        arr.push(h)
-        }
-        if(a==x){
-    alert("Congratulations, you have guessed the no. correctly!")
-}
-}
-
-
-let j =arr.length
-document.write("<br>")
-document.write("<br>")
-// document.write("Your score is : ",100-j)
-let zz=("Your score is : ",100-j)
-window.onload = function() {
-       //when the document is finished loading, replace everything
-       //between the <a ...> </a> tags with the value of splitText
-   document.getElementById("myLink").innerHTML=zz;
-} 
-
-        </script>
-        <br><br><br><br>
-        <center style="font-size: x-large;">Your score is:</center>
-        <br>
-        <center style="font-size: xxx-large;">
-<a id="myLink" href = index.html></a>
-</center>
+    <b>
+        <h1><u>LOG</u></h1>
+    </b>
+    <script src="script.js">  </script>
+    <br><br><br><br>
+    <center style="font-size: x-large;">Your score is:</center>
+    <br>
+    <center style="font-size: xxx-large;">
+        <a id="myLink" href=index.html></a>
+    </center>
 </body>
+
 </html>
