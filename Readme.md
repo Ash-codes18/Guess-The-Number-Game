@@ -18,7 +18,8 @@ A Website Built using javascript as a Number guessing game.
 <br>
 
 # Table of Contents
-- [Overview](#Overview)
+- [Demo](#Demo)
+- [Features](#Features)
 - [Installation](#Installation)
 - [Tech-Stack](#Tech-Stack)
 
